@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom headings</title>
+<link rel="stylesheet" href="../uia-typography.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
+<style>
+    .content {
+        box-sizing: border-box;
+        max-width: 760px;
+        padding-top: 1rem;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    :root {
+        --uiaTypographyHeadingFontFamily: 'Roboto Slab', serif;
+        --uiaTypographyHeadingLineHeight: 1.5;
+    }
+</style>
+</head>
+<body>
+    <main class="content">
+        <h1>The 6 most common mistakes developers when writing HTML and CSS</h1>
+        <h2>Using the placeholder attribute instead the label element</h2>
+        <p>
+            Using the placeholder attribute instead the label element
+        </p>
+        <p>
+            So I recommend to use the label element for a field name and the placeholder attribute for an example of data which user need to fill.
+        </p>
+        <h2>To markup decorative graphics using the img element</h2>
+        <p>
+            I often see developers confuse decorative graphics with content images. For example, they mark up social icons using the img element.
+        </p>
+        <p>
+            But a social icon is decorative icon which helps users faster to understand meaning of element without reading text. If we remove icon we don't lose meaning of element so we can use the background-image property for it.
+        </p>
+        <h2>Using the resize property</h2>
+        <p>
+            When you disable resizing a textarea using the resize property you worsen accessibility. So the user can't enter a data a comfortable way for himself.
+        </p>
+        <p>
+            You can use the min-width, max-width, min-height and max-height properties that to limit element's sizes and user can fill in fields a comfortable way for himself.
+        </p>
+    </main>
+</body>
+</html>

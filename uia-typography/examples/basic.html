@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of typography</title>
+<link rel="stylesheet" href="../uia-typography.css">
+<style>
+    .content {
+        box-sizing: border-box;
+        max-width: 1024px;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+</style>
+</head>
+<body>
+    <main class="content">
+        <h1>HTML 5.3. W3C Working Draft, 18 October 2018</h1>
+        <h2><a href="#0">4.7. Embedded content</a></h2>
+        <h3>4.7.1. Introduction</h3>
+        <p>
+            To embed an image in HTML, when there is only a single image resource, use the img element and with its src and alt attributes.
+        </p>
+        <p>
+            However, there are a number of situations for which the author might wish to use multiple image resources that the user agent can choose from:
+        </p>
+        <ul>
+            <li>
+                Different users might have different environmental characteristics:
+                <ul>
+                    <li>The users' physical screen size might be different from one another.</li>
+                    <li>The users' zoom level might be different from one another, or might change for a single user over time.</li>
+                    <li>The users' screen orientation might be different from one another, or might change for a single user over time.</li>
+                </ul>
+            </li>
+            <li>Authors might want to show the same image content but with different rendered size depending on, usually, the width of the viewport. This is usually referred to as viewport-based selection.</li>
+            <li>Authors might want to show the same image content but using different image formats, depending on which image formats the user agent supports. This is usually referred to as image format-based selection.</li>
+        </ul>
+        <p>
+            The above situations are not mutually exclusive. For example, it is reasonable to combine different resources for different device-pixel-ratio with different resources for art direction.
+        </p>
+        <p>
+            While it is possible to solve these problems using scripting, doing so introduces some other problems:
+        </p>
+        <ul>
+            <li>
+                Some user agents aggressively download images specified in the HTML markup, before scripts have had a chance to run, so that Web pages complete loading sooner. If a script changes which image to download, the user agent will potentially start two separate downloads, which can instead cause worse page loading performance.
+            </li>
+            <li>
+                If the author avoids specifying any image in the HTML markup and instead instantiates a single download from script, that avoids the double download problem above but instead it makes no image be downloaded at all for users with scripting disabled and it disables the aggressive image downloading optimization.
+            </li>
+        </ul>
+        <p>
+            With this in mind, this specification introduces a number of features to address the above problems in a declarative manner.
+        </p>
+        <h4>Device-pixel-ratio-based selection when the rendered size of the image is fixed</h4>
+        <p>
+            The src and srcset attributes on the img element can be used, using the x descriptor, to provide multiple images that only vary in their size (the smaller image is a scaled-down version of the bigger image).
+        </p>
+        <h4>Viewport-based selection</h4>
+        <p>
+            The srcset and sizes attributes can be used, using the w descriptor, to provide multiple images that only vary in their size (the smaller image is a scaled-down version of the bigger image).
+        </p>
+        <h3>4.7.5. The img element</h3>
+        <p>
+            An img element represents an image and its fallback content.
+        </p>
+        <p>
+            The image given by the src and srcset attributes, and any previous sibling source elements' srcset attributes if the parent is a picture element, is the embedded content; the value of the alt attribute and the content referred to by the longdesc attribute are the img element’s fallback content, and provide equivalent content for users and user agents who cannot process images or have image loading disabled.
+        </p>
+        <p>
+            Requirements for alternative representations of the image are described in the next section.
+        </p>
+        <p>
+            The src attribute must be present, and must contain a valid non-empty URL potentially surrounded by spaces referencing a non-interactive, optionally animated, image resource that is neither paged nor scripted.
+        </p>
+        <p>
+            The srcset attribute may also be present. If present, its value must consist of one or more image candidate strings, each separated from the next by a U+002C COMMA character (,). If an image candidate string contains no descriptors and no space characters after the URL, the following image candidate string, if there is one, must begin with one or more space characters.
+        </p>
+        <p>
+            An image candidate string consists of the following components, in order, with the further restrictions described below this list:
+        </p>
+        <ol>
+            <li>Zero or more space characters.</li>
+            <li>A valid non-empty URL that does not start or end with a U+002C COMMA character (,), referencing a non-interactive, optionally animated, image resource that is neither paged nor scripted.</li>
+            <li>Zero or more space characters.</li>
+            <li>
+                Zero or one of the following:
+                <ul>
+                    <li>
+                        A width descriptor, consisting of: a space character, a valid non-negative integer giving a number greater than zero representing the width descriptor value, and a U+0077 LATIN SMALL LETTER W character.
+                    </li>
+                    <li>
+                        A pixel density descriptor, consisting of: a space character, a valid floating-point number giving a number greater than zero representing the pixel density descriptor value, and a U+0078 LATIN SMALL LETTER X character.
+                    </li>
+                </ul>
+            </li>
+            <li>Zero or more space characters.</li>
+        </ol>
+        <p>
+            There must not be an image candidate string for an element that has the same width descriptor value as another image candidate string’s width descriptor value for the same element.
+        </p>
+        <p>
+            There must not be an image candidate string for an element that has the same pixel density descriptor value as another image candidate string’s pixel density descriptor value for the same element. For the purpose of this requirement, an image candidate string with no descriptors is equivalent to an image candidate string with a 1x descriptor.
+        </p>
+    </main>
+</body>
+</html>
