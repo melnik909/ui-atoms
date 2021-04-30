@@ -1,0 +1,4 @@
+
+.r-body{
+    margin: var(--rBodyMargin, var(--rbody-mrgin-top, 0) var(--rBodyMarginRight, 0) var(--rBodyMarginBottom, 0) var(--rBodyMarginLeft, 0)) !important;
+}
