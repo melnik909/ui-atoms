@@ -7,4 +7,4 @@ Reset default styles of address element
 
 | Option | Description | Default |
 | ----- | ----- | ----- |
-| --raddress-font-style | The value for the font-style property | normal |
+| --ra-address-font-style | The value for the font-style property | normal |

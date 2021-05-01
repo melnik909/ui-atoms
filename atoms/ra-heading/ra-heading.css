@@ -1,0 +1,5 @@
+
+.ra-heading{
+    margin-top: var(--ra-heading-margin-top, 0) !important;
+    margin-bottom: var(--ra-heading-margin-bottom, 0) !important;
+}

@@ -1,4 +1,0 @@
-
-.uia-rbody{
-    margin: var(--rbody-margin, var(--rbody-margin-top, 0) var(--rbody-margin-right, 0) var(--rbody-margin-botton, 0) var(--rbody-margin-left, 0)) !important;
-}

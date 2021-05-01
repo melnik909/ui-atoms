@@ -1,0 +1,4 @@
+
+.ra-body{
+    margin: var(--ra-body-margin, var(--ra-body-margin-top, 0) var(--ra-body-margin-right, 0) var(--ra-body-margin-botton, 0) var(--ra-body-margin-left, 0)) !important;
+}
