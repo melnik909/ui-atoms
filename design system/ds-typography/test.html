@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Typography</title>
 <link rel="stylesheet" href="../../tests/resources/tests.css">
-<link rel="stylesheet" href="../uia-typography.css">
+<link rel="stylesheet" href="ds-typography.css">
 </head>
 <body class="r-body">
     <div class="tests">
@@ -410,12 +410,23 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyBasicMargin: 5em">
-                    <span class="tests__name">--uiaTypographyBasicMargin: 5em</span>
+                <div class="tests__group" style="--ds-typography-paragraph-margin-top: 50px">
+                    <span class="tests__name">--ds-typography-paragraph-margin-top: 50px</span>
                     <div class="tests__demo">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, delectus!
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
+                    </div>
+                </div>
+                <div class="tests__group" style="--ds-typography-paragraph-line-height: 4">
+                    <span class="tests__name">--ds-typography-paragraph-line-height: 4</span>
+                    <div class="tests__demo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
+                    </div>
+                </div>
+                <div class="tests__group" style="--ds-typography-list-margin-top: 50px">
+                    <span class="tests__name">--ds-typography-list-margin-top: 50px</span>
+                    <div class="tests__demo">
                         <ol>
                             <li>item</li>
                             <li>item</li>
@@ -426,15 +437,11 @@
                             <li>item</li>
                             <li>item</li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyLineHeight: 1">
-                    <span class="tests__name">--uiaTypographyLineHeight: 1</span>
+                <div class="tests__group" style="--ds-typography-list-line-height: 4">
+                    <span class="tests__name">--ds-typography-list-line-height: 4</span>
                     <div class="tests__demo">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, delectus!
-                        </p>
                         <ol>
                             <li>item</li>
                             <li>item</li>
@@ -445,11 +452,10 @@
                             <li>item</li>
                             <li>item</li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyHeadingFontFamily: Georgia">
-                    <span class="tests__name">--uiaTypographyHeadingFontFamily: Georgia</span>
+                <div class="tests__group" style="--ds-typography-heading-font-family: Georgia">
+                    <span class="tests__name">--ds-typography-heading-font-family: Georgia</span>
                     <div class="tests__demo">
                         <h1>Heading 1 level</h1>
                         <h2>Heading 2 level</h2>
@@ -459,8 +465,8 @@
                         <h6>Heading 6 level</h6>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyHeadingMarginTop: 50px">
-                    <span class="tests__name">--uiaTypographyHeadingMarginTop: 50px</span>
+                <div class="tests__group" style="--ds-typography-heading-margin-top: 50px">
+                    <span class="tests__name">--ds-typography-heading-margin-top: 50px</span>
                     <div class="tests__demo">
                         <h1>Heading 1 level</h1>
                         <h2>Heading 2 level</h2>
@@ -470,8 +476,8 @@
                         <h6>Heading 6 level</h6>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyHeadingMarginBottom: 50px">
-                    <span class="tests__name">--uiaTypographyHeadingMarginBottom: 50px</span>
+                <div class="tests__group" style="--ds-typography-heading-margin-bottom: 50px">
+                    <span class="tests__name">--ds-typography-heading-margin-bottom: 50px</span>
                     <div class="tests__demo">
                         <h1>Heading 1 level</h1>
                         <h2>Heading 2 level</h2>
@@ -481,8 +487,8 @@
                         <h6>Heading 6 level</h6>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyHeadingLineHeight: 1">
-                    <span class="tests__name">--uiaTypographyHeadingLineHeight: 1</span>
+                <div class="tests__group" style="--ds-typography-heading-line-height: 1">
+                    <span class="tests__name">--ds-typography-heading-line-height: 1</span>
                     <div class="tests__demo">
                         <h1>Heading 1 level</h1>
                         <h2>Heading 2 level</h2>
@@ -492,62 +498,62 @@
                         <h6>Heading 6 level</h6>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyH1FontSize: 16px">
-                    <span class="tests__name">--uiaTypographyH1FontSize: 16px</span>
+                <div class="tests__group" style="--ds-typography-h1-font-size: 16px">
+                    <span class="tests__name">--ds-typography-h1-font-size: 16px</span>
                     <div class="tests__demo">
                         <h1>Heading 1 level</h1>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyH2FontSize: 16px">
-                    <span class="tests__name">--uiaTypographyH2FontSize: 16px</span>
+                <div class="tests__group" style="--ds-typography-h2-font-size: 16px">
+                    <span class="tests__name">--ds-typography-h2-font-size: 16px</span>
                     <div class="tests__demo">
                         <h2>Heading 2 level</h2>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyH3FontSize: 16px">
-                    <span class="tests__name">--uiaTypographyH3FontSize: 16px</span>
+                <div class="tests__group" style="--ds-typography-h3-font-size: 16px">
+                    <span class="tests__name">--ds-typography-h3-font-size: 16px</span>
                     <div class="tests__demo">
                         <h3>Heading 3 level</h3>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyH4FontSize: 16px">
-                    <span class="tests__name">--uiaTypographyH4FontSize: 16px</span>
+                <div class="tests__group" style="--ds-typography-h4-font-size: 16px">
+                    <span class="tests__name">--ds-typography-h4-font-size: 16px</span>
                     <div class="tests__demo">
                         <h4>Heading 4 level</h4>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyH5FontSize: 16px">
-                    <span class="tests__name">--uiaTypographyH5FontSize: 16px</span>
+                <div class="tests__group" style="--ds-typography-h5-font-size: 16px">
+                    <span class="tests__name">--ds-typography-h5-font-size: 16px</span>
                     <div class="tests__demo">
                         <h5>Heading 5 level</h5>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyH6FontSize: 20px">
-                    <span class="tests__name">--uiaTypographyH6FontSize: 20px</span>
+                <div class="tests__group" style="--ds-typography-h6-font-size: 20px">
+                    <span class="tests__name">--ds-typography-h6-font-size: 20px</span>
                     <div class="tests__demo">
                         <h6>Heading 6 level</h6>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyLinkColor: purple">
-                    <span class="tests__name">--uiaTypographyLinkColor: purple</span>
+                <div class="tests__group" style="--ds-typography-link-color: purple">
+                    <span class="tests__name">--ds-typography-link-color: purple</span>
                     <div class="tests__demo">
                         <p>Lorem ipsum dolor sit amet, <a href="#0">consectetur adipisicing</a> elit. Ipsum quisquam dignissimos fuga? Tenetur libero officia, magni vero dolor ea quidem explicabo sed doloribus adipisci nam nostrum velit odio cumque illo, unde harum consectetur totam expedita inventore incidunt quos quisquam dignissimos et. Consectetur, quisquam itaque, dignissimos expedita placeat fugit voluptate dolores.</p>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyImgDisplay: flex">
-                    <span class="tests__name">--uiaTypographyImgDisplay: flex</span>
+                <div class="tests__group" style="--ds-typography-img-display: flex">
+                    <span class="tests__name">--ds-typography-img-display: flex</span>
                     <div class="tests__demo">
                         <img src="../../tests/resources/example.png" alt>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyImgMaxWidth: 50%">
-                    <span class="tests__name">--uiaTypographyImgMaxWidth: 50%</span>
+                <div class="tests__group" style="--ds-typography-img-max-width: 50%">
+                    <span class="tests__name">--ds-typography-img-max-width: 50%</span>
                     <div class="tests__demo">
                         <img src="../../tests/resources/example.png" alt>
                     </div>
                 </div>
-                <div class="tests__group" style="--uiaTypographyLiMargin: 10px">
-                    <span class="tests__name">--uiaTypographyLiMargin: 10px</span>
+                <div class="tests__group" style="--ds-typography-list-item-margin: 10px">
+                    <span class="tests__name">--ds-typography-list-item-margin: 10px</span>
                     <div class="tests__demo">
                         <ul>
                             <li>item</li>

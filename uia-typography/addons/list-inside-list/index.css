@@ -1,4 +1,0 @@
-
-li > ul:not([class]){
-    margin-top: var(--uiaTypographyNestedListMargin, .5em);
-}

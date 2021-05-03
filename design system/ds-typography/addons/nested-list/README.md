@@ -5,4 +5,4 @@ The add-on to set styles for lists that are nested inside the list.
 
 | Option | Default |
 | ----- | ----- |
-| --uiaTypographyNestedListMargin | .5em |
+| --ds-typography-nested-list-margin-top | .5rem |

@@ -1,0 +1,95 @@
+
+:root{
+    --uds-typography-main-line-height: var(--ds-typography-main-line-height, 1.75);
+    --uds-typography-main-margin: var(--ds-typography-main-margin, 1em);
+}
+
+html{
+    font-family: var(--ds-typography-main-font-family, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif);
+    font-size: var(--ds-typography-main-font-size, 1rem);
+    color: var(--ds-typography-main-color, #222);
+}
+
+p:not([class]){
+    line-height: var(--ds-typography-paragraph-line-height, var(--uds-typography-main-line-height));
+    margin-top: var(--ds-typography-paragraph-margin-top, var(--uds-typography-main-margin));
+    margin-bottom: 0;
+}
+
+ul:not([class]),
+ol:not([class]){
+    line-height: var(--ds-typography-list-line-height, var(--uds-typography-main-line-height));
+    margin-top: var(--ds-typography-list-margin-top, var(--uds-typography-main-margin));
+    margin-bottom: 0;
+}
+
+p:not([class]):first-child{
+    --ds-typography-paragraph-margin-top: 0;
+}
+
+*:not(li) > ul:not([class]):first-child,
+*:not(li) > ol:not([class]):first-child{
+/*
+When you import the nested list addon this at-rule
+shouldn't match to nested lists. So I use the * selector to reach that.
+*/
+    --ds-typography-list-margin-top: 0;
+}
+
+li:not([class]):nth-child(n+2){
+    margin-top: var(--ds-typography-list-item-margin, .75em);
+}
+
+h1:not([class]),
+h2:not([class]),
+h3:not([class]),
+h4:not([class]),
+h5:not([class]),
+h6:not([class]){
+    margin-top: var(--ds-typography-heading-margin-top, 1em);
+    margin-bottom: var(--ds-typography-heading-margin-bottom, .25em);
+    line-height: var(--ds-typography-heading-line-height, var(--uds-typography-main-line-height));
+    font-family: var(--ds-typography-heading-font-family, inherit);
+}
+
+h1:not([class]):first-child,
+h2:not([class]):first-child,
+h3:not([class]):first-child,
+h4:not([class]):first-child,
+h5:not([class]):first-child,
+h6:not([class]):first-child{
+    margin-top: 0;
+}
+
+h1:not([class]){
+    font-size: var(--ds-typography-h1-font-size, 2rem);
+}
+
+h2:not([class]){
+    font-size: var(--ds-typography-h2-font-size, 1.75rem);
+}
+
+h3:not([class]){
+    font-size: var(--ds-typography-h3-font-size, 1.5rem);
+}
+
+h4:not([class]){
+    font-size: var(--ds-typography-h4-font-size, 1.375rem);
+}
+
+h5:not([class]){
+    font-size: var(--ds-typography-h5-font-size, 1.25rem);
+}
+
+h6:not([class]){
+    font-size: var(--ds-typography-h6-font-size, 1.125rem);
+}
+
+a{
+	color: var(--ds-typography-link-color, #5e4ef3);
+}
+
+img{
+    display: var(--ds-typography-img-display, block);
+    max-width: var(--ds-typography-img-max-width, 100%);
+}

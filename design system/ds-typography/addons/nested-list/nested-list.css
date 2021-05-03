@@ -1,0 +1,5 @@
+
+li > ul:not([class]),
+li > ol:not([class]){
+    --ds-typography-list-margin-top: var(--ds-typography-nested-list-margin-top, .5rem);
+}
