@@ -18,26 +18,3 @@ That's all. The default styles apply to elements. If you'd like to customize it 
   --ds-typography-heading-line-height: 1.5;
 }
 ```
-## Settings
-
-| Option | Default |
-| ----- | ----- |
-| --ds-typography-main-font-family | -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif |
-| --ds-typography-main-font-size | 1rem |
-| --ds-typography-main-color | #222 |
-| --uiaTypographyBasicMargin | 1em |
-| --uiaTypographyLineHeight | 1.78 |
-| --ds-typography-list-item-margin | .75em |
-| --ds-typography-heading-margin-top | 1em |
-| --ds-typography-heading-margin-bottom | .25em |
-| --ds-typography-heading-line-height | 1.78 |
-| --ds-typography-heading-font-family | inherit |
-| --ds-typography-h1-font-size | 2.25rem |
-| --ds-typography-h2-font-size | 2rem |
-| --ds-typography-h3-font-size | 1.75rem |
-| --ds-typography-h4-font-size | 1.5rem |
-| --ds-typography-h5-font-size | 1.25rem |
-| --ds-typography-h6-font-size | 1rem |
-| --ds-typography-link-color | #5e4ef3 |
-| --ds-typography-img-display | block |
-| --ds-typography-img-max-width | 100% |
