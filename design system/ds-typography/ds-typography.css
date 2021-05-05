@@ -12,19 +12,19 @@ html{
 
 p:not([class]){
     line-height: var(--ds-typography-paragraph-line-height, var(--uds-typography-main-line-height));
-    margin-top: var(--ds-typography-paragraph-margin-top, var(--uds-typography-main-margin));
-    margin-bottom: 0;
+    margin-block-start: var(--ds-typography-paragraph-margin-block-start, var(--uds-typography-main-margin));
+    margin-block-end: 0;
 }
 
 ul:not([class]),
 ol:not([class]){
     line-height: var(--ds-typography-list-line-height, var(--uds-typography-main-line-height));
-    margin-top: var(--ds-typography-list-margin-top, var(--uds-typography-main-margin));
-    margin-bottom: 0;
+    margin-block-start: var(--ds-typography-list-margin-block-start, var(--uds-typography-main-margin));
+    margin-block-end: 0;
 }
 
 p:not([class]):first-child{
-    --ds-typography-paragraph-margin-top: 0;
+    --ds-typography-paragraph-margin-block-start: 0;
 }
 
 *:not(li) > ul:not([class]):first-child,
@@ -33,11 +33,11 @@ p:not([class]):first-child{
 When you import the nested list addon this at-rule
 shouldn't match to nested lists. So I use the * selector to reach that.
 */
-    --ds-typography-list-margin-top: 0;
+    --ds-typography-list-margin-block-start: 0;
 }
 
 li:not([class]):nth-child(n+2){
-    margin-top: var(--ds-typography-list-item-margin, .75em);
+    margin-block-start: var(--ds-typography-list-item-margin-block-start, .75em);
 }
 
 h1:not([class]),
@@ -46,8 +46,8 @@ h3:not([class]),
 h4:not([class]),
 h5:not([class]),
 h6:not([class]){
-    margin-top: var(--ds-typography-heading-margin-top, 1em);
-    margin-bottom: var(--ds-typography-heading-margin-bottom, .25em);
+    margin-block-start: var(--ds-typography-heading-margin-block-start, 1em);
+    margin-block-end: var(--ds-typography-heading-margin-block-end, .25em);
     line-height: var(--ds-typography-heading-line-height, var(--uds-typography-main-line-height));
     font-family: var(--ds-typography-heading-font-family, inherit);
 }
@@ -58,7 +58,7 @@ h3:not([class]):first-child,
 h4:not([class]):first-child,
 h5:not([class]):first-child,
 h6:not([class]):first-child{
-    margin-top: 0;
+    margin-block-start: 0;
 }
 
 h1:not([class]){

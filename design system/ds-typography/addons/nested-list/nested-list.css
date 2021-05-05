@@ -1,5 +1,5 @@
 
 li > ul:not([class]),
 li > ol:not([class]){
-    --ds-typography-list-margin-top: var(--ds-typography-nested-list-margin-top, .5rem);
+    --ds-typography-list-margin-block-start: var(--ds-typography-nested-list-margin-block-start, .5rem);
 }
