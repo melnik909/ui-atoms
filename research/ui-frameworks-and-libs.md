@@ -1,5 +1,5 @@
 # UI frameworks and libs
-* [Twitter Bootstrap](https://v5.getbootstrap.com/docs/5.0/components/buttons/)
+* [Twitter Bootstrap](https://getbootstrap.com)
 * [Semantic UI](https://semantic-ui.com/)
 * [Tailwindcss](https://tailwindcss.com/)
 * [Bulma](https://bulma.io/)
