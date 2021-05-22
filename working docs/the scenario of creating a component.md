@@ -1,8 +1,22 @@
-# The scenario of creating a component
+# The awesome component
 
-## 1. Research alternatives
-We should explore experience of others developers and designers and answer on the following questions: Which problems were? How they were solved
+## Purpose
+You should describe what this component does. Why did you create it? 
 
-As a result we should get the research.md file where will be described answers to questions.
+## How to use
+You should describe all processes of using this component.
 
-**this document is in development**
+## Settings
+You should describe all settings that users can change
+
+## Dependencies
+You should describe what elements are required to be included for the correct work of this component.
+
+## Research alternatives
+You should explore the experience of others developers and designers. You should find the best practices, mistakes, or any experience that might be useful. Remember, there is a high chance other developers have solved what you want to do.
+
+## Resources
+You should include the link on standards, guides, articles, videos, etc that was used when creating this component.
+
+## Test cases
+You should describe cases in which your component should work. For example, what should happen, if this component doesn't have some attribute or how screen readers should voice this component. Also, this section includes requirements of design, accessibility, and any other.
