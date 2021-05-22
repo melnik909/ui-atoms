@@ -1,11 +1,15 @@
 
 /*
 1. line height (line spacing) to at least 1.5 times the font size. The 1.4.12 requirements from WCAG 2.2 https://www.w3.org/TR/WCAG22/#text-spacing
+2. Spacing following paragraphs to at least 2 times the font size;
+   The 1.4.12 requirements from WCAG 2.2 https://www.w3.org/TR/WCAG22/#text-spacing
+   This gap should be computed taking into account the line-height
+
 */
 
 :root{
     --uds-typography-main-line-height: var(--ds-typography-main-line-height, 1.75); /* 1 */
-    --uds-typography-main-margin: var(--ds-typography-main-margin, 1em);
+    --uds-typography-main-margin: var(--ds-typography-main-margin, 1.25em); /* 2 */
 }
 
 html{
