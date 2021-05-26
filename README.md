@@ -1,6 +1,6 @@
 # ui-atoms
 
-## what's the repository about?
+## What's the repository about?
 This repository is my knowledge store. All my development process will be saved here.
 
 ## Why I use prefixes such as ra-, uia-, etc
