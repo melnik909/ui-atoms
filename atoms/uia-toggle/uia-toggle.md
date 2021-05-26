@@ -16,7 +16,7 @@ You should describe what elements are required to be included for the correct wo
 You should explore the experience of others developers and designers. You should find the best practices, mistakes, or any experience that might be useful. Remember, there is a high chance other developers have solved what you want to do.
 
 ## Resources
-* [An accessible toggle] (https://kittygiraudel.com/2021/04/05/an-accessible-toggle/)
+* [An accessible toggle](https://kittygiraudel.com/2021/04/05/an-accessible-toggle/)
 
 ## Test cases
 You should describe cases in which your component should work. For example, what should happen, if this component doesn't have some attribute or how screen readers should voice this component. Also, this section includes requirements of design, accessibility, and any other.
