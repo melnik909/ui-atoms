@@ -1,4 +1,4 @@
-# ui-atoms
+# Atoms — the approach of UI development with saving previous experiences
 
 ## What's the repository about?
 This repository is my knowledge store. All my development process will be saved here. I develop reusable components and docs that help me don't repeat things that are made. 
