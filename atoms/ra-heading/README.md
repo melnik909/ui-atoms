@@ -4,7 +4,7 @@
 Reset h1-h6 elements' default styles
 
 ## How to use
-Put the ra-heading.css file into your CSS file before other style
+Put the ra-heading.css file into your CSS file before other styles
 
 ```css
 @import 'ra-heading.css';
@@ -12,7 +12,7 @@ Put the ra-heading.css file into your CSS file before other style
 /* other styles */
 ```
 
-If you want to change settings you should declare :root pseudo-class and set new values
+If you want to change settings you should declare the :root pseudo-class and set new values
 
 ```css
 @import 'ra-heading.css';
@@ -32,13 +32,13 @@ If you want to change settings you should declare :root pseudo-class and set new
 | --ra-heading-margin-bottom | The value for the margin-bottom property | 0 |
 
 ## Dependencies
-Atom doesn't have dependencies
+The atom has no dependencies
 
 ## Research alternatives
-Atom doesn't have research alternatives
+The atom has no research alternatives
 
 ## Resources
-Atom doesn't have resources.
+The atom has no resources
 
 ## Test cases
 1. You should ensure all settings of the atom might be changed
