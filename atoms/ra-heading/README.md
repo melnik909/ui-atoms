@@ -26,10 +26,10 @@ If you want to change settings you should declare the :root pseudo-class and set
 ```
 
 ## Settings
-| Option | Description | Default |
+| Name | Description | Default |
 | ----- | ----- | ----- |
-| --ra-heading-margin-block-start | the gap before element | 0 |
-| --ra-heading-margin-block-end | the gap after element | 0 |
+| --ra-heading-margin-block-start | the gap before the element | 0 |
+| --ra-heading-margin-block-end | the gap after the element | 0 |
 
 ## Dependencies
 The atom has no dependencies
