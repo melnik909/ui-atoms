@@ -18,8 +18,8 @@ If you want to change settings you should declare the :root pseudo-class and set
 @import 'ra-heading.css';
 
 :root {
-  --ra-heading-margin-top: 1rem;
-  --ra-heading-margin-bottom: 1rem;
+  --ra-heading-margin-block-start: 1rem;
+  --ra-heading-margin-block-end: 1rem;
 }
 
 /* other styles */
@@ -28,8 +28,8 @@ If you want to change settings you should declare the :root pseudo-class and set
 ## Settings
 | Option | Description | Default |
 | ----- | ----- | ----- |
-| --ra-heading-margin-top | The value for the margin-top property | 0 |
-| --ra-heading-margin-bottom | The value for the margin-bottom property | 0 |
+| --ra-heading-margin-block-start | the gap before element | 0 |
+| --ra-heading-margin-block-end | the gap after element | 0 |
 
 ## Dependencies
 The atom has no dependencies
