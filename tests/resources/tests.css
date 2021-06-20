@@ -1,66 +1,40 @@
 
 .tests{
     max-width: 768px;
-    padding-bottom: 35px;
-    padding-top: 35px;
-
-    margin-left: auto;
-    margin-right: auto;
-
+    padding-block: 2rem;
+    margin-inline: auto;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+
+    display: grid;
+    row-gap: 4.5rem;
 }
 
 .tests__title{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .tests__groups{
-    margin-top: 30px;
+    margin-block-start: 1.75rem;
 }
 
 .tests__group{
-    --testsGroupBorderWidth: 2px;
-
-    border-top: var(--testsGroupBorderWidth) solid #f0f0f0;
-    border-right: var(--testsGroupBorderWidth) solid #f0f0f0;
-    border-bottom: var(--testsGroupBorderWidth) solid #f0f0f0;
+    border: 2px solid #f0f0f0;
     border-radius: 5px;
-
-    padding: 20px 15px 20px 25px;
-    position: relative;
-}
-
-.tests__group::before{
-    content: "";
-    width: 7px;
-    height: calc(100% + calc(var(--testsGroupBorderWidth) * 2));
-
-    background-color: #ffe376;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-    position: absolute;
-    top: calc(-1 * var(--testsGroupBorderWidth));
-    left: 0;
-}
-
-.tests__group:nth-child(n+2){
-    margin-top: 50px;
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem 1rem;
 }
 
 .tests__name{
-    display: inline-flex;;
-    padding: 7px 15px 5px;
+    display: inline-flex;
+    padding-block: .5rem .75rem;
+    padding-inline: 1rem;
 
     border-radius: 3px;
     background-color: #f0f0f0;
-
-    font-size: 15px;
     font-weight: 700;
 }
 
 .tests__demo{
-    margin-top: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-block-start: 1.75rem;
+    padding-inline: .75rem;
 }
